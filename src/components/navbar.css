@@ -1,0 +1,85 @@
+.nav-container {
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.item-container {
+  width: 70%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.nav-item:hover {
+  color: green;
+}
+.active {
+  color: green;
+  text-decoration: none;
+}
+.logo {
+  height: 60px;
+}
+.ham {
+  display: none;
+}
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .logo {
+    margin-left: 100px;
+  }
+  .nav-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.126);
+    width: 80%;
+    padding: 5px;
+  }
+  .active {
+    border-bottom: 1px solid green;
+    width: 80%;
+    padding: 5px;
+  }
+  .img-container {
+    display: flex;
+    align-items: center;
+  }
+  .ham {
+    display: block;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    transition:all 0.9s;
+  }
+  .ham:active
+  {
+    transform:rotate(180deg);
+  } 
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0; /*this two are used to hide the navbar*/
+    opacity: 0; /*insted of directly dispaly none */
+    transition: all 0.3s ease;
+  }
+
+  .item-container.open {
+    max-height: 100vh;
+    opacity: 1;
+    width: 50%;
+    height: 100vh;
+    align-items: start;
+    justify-content: start;
+    gap: 50px;
+  }
+}
