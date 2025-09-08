@@ -72,8 +72,12 @@
     opacity: 0; /*insted of directly dispaly none */
     transition: all 0.3s ease;
   }
-
+.nav-container
+{
+  position:relative;
+}
   .item-container.open {
+    z-index:1000;
     max-height: 100vh;
     opacity: 1;
     width: 50%;
@@ -81,5 +85,11 @@
     align-items: start;
     justify-content: start;
     gap: 50px;
+    position:absolute;
+    top:80px;
+    left:0px;
+    background-color:white;
+
   }
+
 }
