@@ -1,10 +1,11 @@
 import Navbar from "./../components/navbar.jsx"
+import Sample from "../assets/image/sample.jpg"
 const Home = ()=>
 {
     return(
         <div>
             <Navbar />
-            <h1>Home Pageddddddddddddddddddddd</h1>
+            <div style={{width:"100%"}}><img src={Sample} style={{width:"100%"}}/></div>
         </div>
     )
 }

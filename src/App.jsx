@@ -4,6 +4,7 @@ import Home from "./pages/Home.jsx";
 import About from "./pages/about.jsx"
 import Blog from "./pages/Blog.jsx"
 import Contact from "./pages/Contact.jsx"
+import Payment from "./pages/payment.jsx"
 import Login from "./pages/Login.jsx"
 const App = ()=>
 {
@@ -16,6 +17,7 @@ const App = ()=>
       <Route path="/about" element={<About />}></Route>
       <Route path="blog" element={<Blog />}></Route>
       <Route path="/contact" element={<Contact />}></Route>
+      <Route path="/payment" element={<Payment />}></Route>
       <Route path="/login" element={<Login />}></Route>
      </Routes>
      </BrowserRouter>

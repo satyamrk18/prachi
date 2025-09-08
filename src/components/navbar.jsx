@@ -42,12 +42,19 @@ const Navbar = () => {
         >
           Contact
         </Link>
+         <Link
+          to="/payment"
+          className={location.pathname == "/payment" ? "active" : "nav-item"}
+        >
+         Payment
+        </Link>
         <Link
           to="/login"
           className={location.pathname == "/login" ? "active" : "nav-item"}
         >
           Log In
         </Link>
+         
       </div>
     </div>
   );
