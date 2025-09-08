@@ -30,6 +30,7 @@
 }
 .logo {
   height: 60px;
+  cursor:pointer;
 }
 .ham {
   display: none;

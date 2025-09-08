@@ -11,11 +11,16 @@ const Navbar = () => {
         setIsOpne(!isOpne);
     }
   const location = useLocation();
+  //reload page when click to logo
+  const reloadPage = ()=>
+  {
+    window.location.reload();
+  }
   return (
     <div className="nav-container">
       <div className="img-container">
         <img src={isOpne ? Close : Hamburger} alt="hamburger" className="ham" onClick={tandleClose}/>
-        <img src={Logo} alt="logo" className="logo" />
+        <img src={Logo} alt="logo" className="logo" onClick={reloadPage}/>
       </div>
       <div className={`item-container ${isOpne ? "open" : ""}`}>
         <Link
